@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS Code Landing Page: Clone</title>
+  <!-- linking files -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main>
+    <nav id="main-nav">
+      <div class="content">
+        <div class="part-1">
+          <h1>
+            <a href="#main-nav"><img src="./assets/vscode-icon.png" alt="vscode-icon" id="logo-icon" />visual studio
+              code</a>
+          </h1>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">api</a></li>
+            <li><a href="#">extensions</a></li>
+            <li><a href="#">faq</a></li>
+            <li><a href="#">github copilot</a></li>
+            <li><a href="#">mcp</a></li>
+          </ul>
+        </div>
+        <div class="part-2">
+          <ul>
+            <li>
+              <a href="#" id="theme-icon-dark"><img src="./assets/icons/theme/theme-dark.svg" alt="theme-icon" /></a>
+              <a href="#" id="theme-icon-light"><img src="./assets/icons/theme/theme-light.svg" alt="theme-icon" /></a>
+            </li>
+            <li>
+              <form action="#" id="search-form">
+                <button type="button" id="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input type="text" name="search-term" id="search-bar" placeholder="Search Docs" />
+              </form>
+            </li>
+            <li>
+              <button class="download-btn">Download</button>
+            </li>
+          </ul>
+        </div>
+        <div class="part-3">
+          <img src="./assets/icons/hamburger-white.svg" alt="hamburger-icon" id="nav-icon" />
+        </div>
+      </div>
+    </nav>
+    <div id="notification-bar">
+      <div class="NBone">
+        Try <a href="" class="link">MCP servers</a> to extend agent mode in VS
+        Code!
+      </div>
+      <div class="NBtwo" id="NBclose-btn"></div>
+    </div>
+    <div id="first-page">
+      <h1 class="fp-heading">The open source AI code editor</h1>
+      <div class="fp-info">
+        <button>
+          <div class="windows-icon"></div>
+          Download for Windows
+        </button>
+        <p>
+          <span>Web,</span><span>Insiders editions,</span>or
+          <span>other platforms</span>
+        </p>
+        <p>
+          By using VS Code, you agree to its <span>License</span> and
+          <span>privacy statement.</span>
+        </p>
+      </div>
+
+      <div class="video-section">
+        <video src="https://code.visualstudio.com/assets/home/hero-dark-sm.webm" id="demo-video" playsinline autoplay
+          muted></video>
+        <div alt="code-image" id="video-screenshot"></div>
+        <button id="replay-btn">replay</button>
+      </div>
+    </div>
+    <div id="third-page">
+      <div class="content">
+        <div class="tp-uppersection">
+          <div class="tp-first">
+            <h3>Any model for any team</h3>
+            <p>
+              Use AI models like Claude Sonnet out of the box, or bring your
+              own key to access models from Azure, Anthropic, Google, Ollama,
+              OpenAI, and OpenRouter.
+            </p>
+            <div class="img">
+              <img src="https://code.visualstudio.com/assets/home/choose-model-dark.webp" alt="card-image" />
+            </div>
+          </div>
+          <div class="tp-second">
+            <h3>An expert on your codebase</h3>
+            <p>
+              Your codebase is indexed locally and remotely (on GitHub) to
+              understand what's relevant, enabling fast, context-aware
+              interactions.
+            </p>
+            <div class="img">
+              <img src="https://code.visualstudio.com/assets/home/an-expert-on-your-codebase-dark.webp"
+                alt="card-image" />
+            </div>
+          </div>
+          <div class="tp-third">
+            <h3>AI that works the way your team does</h3>
+            <p>
+              Personalize interactions using custom instructions and reusable
+              prompt files tailored to your workflows, tools, and projects.
+            </p>
+            <div class="img">
+              <img src="https://code.visualstudio.com/assets/home/instructions-dark.webp" alt="alternate-image" />
+            </div>
+          </div>
+        </div>
+        <div class="tp-lowersection">
+          <div class="content">
+            <h3>Use AI features in VS Code for free</h3>
+            <div>
+              <p>
+                No trial. No credit card required. Just your GitHub account.
+              </p>
+              <button>Try free</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fourth page -->
+    <div id="fourth-page">
+      <div class="content">
+        <div class="one">
+          <div>
+          <h2>Agent mode</h2>
+          <p>
+            Tackle complex, multi-step tasks. Agent mode reads your codebase,
+            suggests edits across files, runs terminal commands, and responds
+            to compile or test failures — all in a loop until the job is done.
+            Further refine agent mode to fit your team's workflows with VS
+            Code extensions and Model Context Protocol (MCP) servers.
+          </p>
+          <a href="#">Build with agent mode</a>
+        </div>
+          <img src="https://code.visualstudio.com/assets/home/swimlane-chat-dark.webp" alt="section-image" />
+        </div>
+        <div class="two">
+          <div>
+          <h2>Next edit suggestions</h2>
+          <p>
+            VS Code predicts your next move as you code. Use the Tab key to
+            accept AI-powered suggestions right in your editor. It
+            intelligently recommends what to change — and where — based on the
+            edits you're already making.
+          </p>
+          <a href="#">Code with AI-powered suggestions</a>
+        </div>
+          <img src="https://code.visualstudio.com/assets/home/swimlane-nes-dark.webp" alt="section-image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- fifth page -->
+    <div id="fifth-page">
+      <div class="content">
+        <div class="one">
+          <div>
+          <h2>Code with extensions</h2>
+          <p>
+            Customize VS Code with AI-powered functionality from extensions
+            and Model Context Protocol servers to use in Chat. Or,<a href="">
+              build your own extension</a>
+            to power your team's unique scenarios.
+          </p>
+        </div>
+          <div class="icons">
+            <div class="boxarea">
+              <a href="#"><img src="https://code.visualstudio.com/assets/images/python-extension.png"
+                  alt="python-image" />
+                <div class="icon-desc">
+                  <h4>Python</h4>
+                  <p>Adds rich language support for Python</p>
+              </div>
+              </a>
+              <a href="#"><img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="icons" />
+                <div class="icon-desc"><h4>Icon Heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, soluta.</p>
+              </div>
+              </a>
+              <a href="#">
+                <img src="https://code.visualstudio.com/assets/images/c-extension.png" alt="icons" />
+                <div class="icon-desc"><h4>Icon Heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, soluta.</p></div>
+              </a><a href="#"><img src="https://code.visualstudio.com/assets/images/jupyter-extension.png"
+                  alt="icons" />
+                <div class="icon-desc"><h4>Icon Heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, soluta.</p></div>
+              </a><a href="#"><img src="https://code.visualstudio.com/assets/images/gitlens-extension.png"
+                  alt="icons" />
+                <div class="icon-desc"><h4>Icon Heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, soluta.</p></div>
+              </a><a href="#"><img src="	https://code.visualstudio.com/assets/images/cs-dev-kit-extension.png"
+                  alt="icons" />
+                <div class="icon-desc"><h4>Icon Heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, soluta.</p></div>
+              </a><a href="#"><img src="https://code.visualstudio.com/assets/images/mongodb-extension.png"
+                  alt="icons" />
+                <div class="icon-desc"><h4>Icon Heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, soluta.</p></div>
+              </a><a href="#"><img src="https://code.visualstudio.com/assets/images/azure.png" alt="icons" />
+                <div class="icon-desc"><h4>Icon Heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, soluta.</p></div>
+              </a><a href="#"><img src="https://code.visualstudio.com/assets/images/remote-extension.png" alt="icons" />
+                <div class="icon-desc">blabla</div>
+              </a>
+            </div>
+            <div class="boxarea-desc">
+              View 75k+ extensions in the
+              <a href="#">Extension Marketplace</a>
+            </div>
+          </div>
+        </div>
+        <div class="two">
+          <div>
+          <h2>Code in any language</h2>
+          <p>
+            VS Code supports almost every major programming language. Several
+            ship in the box, like JavaScript, TypeScript, CSS, and HTML, but
+            extensions for others can be found in the VS Code Marketplace.
+          </p>
+        </div>
+        <div>
+          <div class="languagePanel">
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="Javascript" />
+              <code class="verticalCenter">JavaScript</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="TypeScript" />
+              <code class="verticalCenter">TypeScript</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-python.png" alt="Python" />
+              <code class="verticalCenter">Python</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-cs.png" alt="C#" />
+              <code class="verticalCenter">C#</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-cpp.png" alt="C++" />
+              <code class="verticalCenter">C++</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-html.png" alt="HTML" />
+              <code class="verticalCenter">HTML</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-java.png" alt="Java" />
+              <code class="verticalCenter">Java</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-json.png" alt="JSON" />
+              <code class="verticalCenter">JSON</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-php.png" alt="PHP" />
+              <code class="verticalCenter">PHP</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-markdown.png" alt="Markdown" />
+              <code class="verticalCenter">Markdown</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-powershell.png" alt="Powershell" />
+              <code class="verticalCenter">Powershell</code>
+            </div>
+            <div class="flex">
+              <img src="https://code.visualstudio.com/assets/home/language-yaml.png" alt="YAML" />
+              <code class="verticalCenter">YAML</code>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- sixth page/section -->
+      <div id="sixth-page">
+        <div class="content">
+          <div class="one">
+            <div>
+            <h2>Fully customizable</h2>
+            <p>
+              Customize your VS Code UI and layout so that it fits your coding
+              style.
+            </p>
+            <div class="points">
+              <p class="p-one">
+                <a href="#">Color themes</a> let you modify the colors in VS
+                Code's user interface to suit your preferences and work
+                environment.
+              </p>
+              <p class="p-two">
+                <a href="#">Settings Sync</a> enables you to share your user
+                settings across your VS Code instances with the Settings Sync
+                feature.
+              </p>
+              <p class="p-three">
+                <a href="#">Profiles</a> let you create sets of customizations
+                and quickly switch between them or share them with others.
+              </p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="https://code.visualstudio.com/assets/home/swimlane-customized.png" alt="dark-image" />
+          </div>
+          </div>
+          <div class="two">
+            <div>
+            <h2>Code anywhere</h2>
+            <p>
+              Code wherever you're most productive, whether you're connected
+              to the cloud, a remote repository, or in the browser with VS
+              Code for the Web (vscode.dev).
+            </p>
+            <p>
+              <a href="#">Built-in Source Control</a> empowers you with Git
+              support out-of-the-box. Many other source control providers are
+              available through extensions.
+            </p>
+            <p>
+              <a href="#">GitHub Codespaces </a>provides cloud-powered
+              development environments for any activity - whether it's a
+              long-term project, or a short-term task like reviewing a pull
+              request.
+            </p>
+          </div>
+          <div class="img">
+            <img src="	https://code.visualstudio.com/assets/home/swimlane-anywhere.png" alt="dark-bg" />
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- seventh page/section -->
+      <div id="seventh-page">
+        <div class="content">
+          <h2>Code with rich features</h2>
+          <p>
+            There's a lot more to an editor. Whether it's using built-in
+            features or rich extensions, there's something for everyone.
+          </p>
+          <div class="block-parent">
+            <a href="#">
+              <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="icon-images" />
+              <h3>Integrated terminal</h3>
+              <p>
+                Use your favorite shell whether it's zsh, pwsh, or git bash,
+                all inside the editor.
+              </p>
+            </a>
+            <a href="#">
+              <img src="https://code.visualstudio.com/assets/icons/codicon-debug.svg" alt="icon-images" />
+              <h3>Run code</h3>
+              <p>Run and debug your code without leaving your editor.</p>
+            </a>
+            <a href="#">
+              <img src="https://code.visualstudio.com/assets/icons/codicon-version-control.svg" alt="icon-images" />
+              <h3>Version control</h3>
+              <p>
+                Built-in support for git and many other source control
+                providers.
+              </p>
+            </a>
+            <a href="#">
+              <img src="https://code.visualstudio.com/assets/icons/codicon-build-tasks.svg" alt="icon-images" />
+              <h3>Build tasks</h3>
+              <p>Run tools and analyze their results from within VS Code.</p>
+            </a>
+            <a href="#">
+              <img src="https://code.visualstudio.com/assets/icons/codicon-local-history.svg" alt="icon-images" />
+              <h3>Local history</h3>
+              <p>
+                Never lose your changes with automatically tracked local
+                history.
+              </p>
+            </a>
+            <a href="#">
+              <img src="https://code.visualstudio.com/assets/icons/codicon-themes.svg" alt="icon-images" />
+              <h3>Themes</h3>
+              <p>
+                Your theme is an extension of your personality. Add some flair
+                to your editor and add your touch.
+              </p>
+            </a>
+            <a href="#">
+              <img src="	https://code.visualstudio.com/assets/icons/codicon-accessibility.svg" alt="icon-images" />
+              <h3>Accessibility</h3>
+              <p>
+                Optimized experience for screen readers, high contrast themes,
+                and keyboard-only navigation.
+              </p>
+            </a>
+            <a href="#">
+              <img src="	https://code.visualstudio.com/assets/icons/codicon-web.svg" alt="icon-images" />
+              <h3>Web support</h3>
+              <p>
+                Whether you are on your phone, tablet, or desktop, you can
+                access your code from anywhere.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="content">
+      <div class="one">
+        <div class="container">
+          <img src="https://code.visualstudio.com/assets/icons/x-icon.svg" alt="icon">
+          <img src="	https://code.visualstudio.com/assets/icons/github-icon.svg" alt="icon">
+          <img src="	https://code.visualstudio.com/assets/icons/youtube-icon.svg" alt="icon">
+        </div>
+        <img src="	https://code.visualstudio.com/assets/icons/microsoft.svg" alt="icons">
+      </div>
+      <div class="two">
+        <a href="#">Support</a> <a href="#">Privacy</a> <a href="#">Terms of Use</a> <a href="#">License</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
