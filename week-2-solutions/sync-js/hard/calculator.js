@@ -34,6 +34,9 @@ class Calculator {
   }
 
   divide(number){
+      if(number === 0){
+       throw new Error("trying to divide with 0?")
+      }
     this.result /= number;
   }
 
@@ -46,19 +49,21 @@ class Calculator {
   }
 
   calculate(expr){
-    expr.replace(' ','');
-    console.log(expr);
+    expr = expr.replace(/\s/g,'');
     if(/[^0-9+-/*^()$+]/.test(expr)){
       throw new Error("Expression contains wrong letters");
     }
 
-    console.log("Valid expression");
-    
+    if(expr.length === 1){
+      throw new Error("Expression contains only 1 character!")
+    }
+    const result = eval(expr);
+    if(result == "Infinity"){
+      throw new Error("Expression is not divisible by 0");
+    }
+    this.result = result;
+    return this.result;
   }
 }
 
-const obj = new Calculator;
-obj.add(34);
-console.log(obj.calculate(`10 +   2 *    (   6 - (4 + 1) / 2) + 7`));
 
-module.exports = Calculator;

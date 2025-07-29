@@ -1,0 +1,4 @@
+Hii, I am a Random File.
+!Ohh, you accessed and read my content.
+Trying to access content from Files is wrong!.
+taskute
